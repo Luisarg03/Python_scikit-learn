@@ -41,17 +41,17 @@ y = boston.target
 #grafica con los datos correspondientes
 
 plt.scatter(x,y)
-plt.xlabel("Num habitaciones")
-plt.ylabel("Valor medios")
+plt.xlabel("Num. habitaciones")
+plt.ylabel("Valor medio")
 plt.show()
 
-#separacion de datos para entrenamiento de los de prueba
+#separo los datos para ENTRENAMIENTO de los datos de PRUEBA, armo dos conjuntos.
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.1)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
 
 #Defino el tipo de algoritmo a usar, en este caso
-#de regresion lineal
+# Regresion lineal
 
 lr = linear_model.LinearRegression()
 
