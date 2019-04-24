@@ -24,6 +24,7 @@ train_X, test_X, train_y, test_y = train_test_split(
 #Usar particiones estratificadas cuando los conjunto de datos sean pequeños para mantener la proporciones por defecto en el dataset por clase...
 #mantenemos la proporción de datos por clase que había originalmente en los nuevos subconjuntos generados...
 
+#Visualizo las proporciones
 print('Todos:', np.bincount(y) )
 print('Entrenamiento:', np.bincount(train_y) )
 print('Test:', np.bincount(test_y) )
